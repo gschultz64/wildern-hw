@@ -1,0 +1,101 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-branding {
+  grid-area: branding;
+}
+
+.icons {
+  grid-area: icons;
+}
+
+.headings {
+  grid-area: headings;
+  padding-left: 2em;
+  align-self: start;
+  background-color: rgba(181, 205, 207, 0.411);
+  padding-bottom: 4em;
+}
+
+.description {
+  grid-area: body;
+  background-color: white;
+}
+
+body {
+  background-color: #152551;
+  min-height: 100vh;
+  margin: 0;
+  background-image: radial-gradient(
+      rgba(21, 37, 81, 0.1),
+      rgba(17, 31, 67, 0.4),
+      #000000
+    ),
+    url(images/Hero-Video.png);
+  background-repeat: no-repeat;
+  background-size: 100% 60vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 40vh 20vh auto;
+  grid-template-areas:
+    "branding branding"
+    "icons headings"
+    "icons body";
+}
+
+.site-branding img {
+  margin: 5em 3em;
+  height: 156px;
+  width: auto;
+}
+
+.headings * {
+  font-weight: bold;
+  color: #fff;
+}
+
+.headings {
+  
+}
+
+.headings h1 {
+  font-size: 48px;
+  line-height: 72px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.headings h1 .blue {
+  color: #152551;
+  padding-right: 10px;
+}
+
+.headings h2 {
+  font-size: 26px;
+  line-height: 36px;
+  margin-top: 0;
+  padding-left: 7px;
+}
+
+.headings h2 .green {
+  color: #99ca44;
+}
+
+.description {
+  margin: 0;
+  padding-left: 4em;
+  padding-top: 1em;
+}
+
+.icons {
+  padding-top: 9em;
+  margin: 0 0 0 2em;
+}
+
+.icons img {
+  margin: 0 .5em;
+  height: 89px;
+  width: auto;
+}
+
